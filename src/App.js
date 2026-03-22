@@ -18,6 +18,12 @@ function App() {
         className="section home"
         style={{ backgroundImage: `url(${coverImage})` }}
       />
+      <section id="gallery" className="section gallery">
+       
+        <div className="gallery-images">
+          <img className="gallery-image" src={adinaImage} alt="Adina" />
+        </div>
+      </section>
       <section id="about" className="section about">
         <div className="about-copy">
           <p>✨ Let&apos;s Dance! ✨</p>
@@ -29,12 +35,7 @@ function App() {
           <p>Be the next dancing star! ⭐</p>
         </div>
       </section>
-      <section id="gallery" className="section gallery">
-       
-        <div className="gallery-images">
-          <img className="gallery-image" src={adinaImage} alt="Adina" />
-        </div>
-      </section>
+      
       <section id="contact" className="section contact">
         <h2>Contact</h2>
         <div className="contact-card">
