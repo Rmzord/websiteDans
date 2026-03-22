@@ -9,9 +9,8 @@ function App() {
     <div className="App">
       <nav className="navbar">
         <a href="#home">Home</a>
-        <a href="#gallery">Galerie</a>
         <a href="#about">Despre</a>
-        
+        <a href="#gallery">Galerie</a>
         <a href="#contact">Contact</a>
       </nav>
       <section
