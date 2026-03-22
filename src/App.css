@@ -1,38 +1,177 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #dafffb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, #009c9a 0%, #00b7b5 100%);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section {
+  padding: 60px 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(9, 45, 88, 0.22);
+  margin-bottom: 40px;
+}
+
+.home {
+  color: white;
+  text-align: center;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.about {
+  background: linear-gradient(135deg, #009c9a 0%, #00b7b5 100%);
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about-copy {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-copy p {
+  margin: 0 0 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.gallery {
+  background: linear-gradient(135deg, #008f8d 0%, #00b7b5 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.gallery-images {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-image {
+  width: min(100%, 340px);
+  border: 4px solid rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 16px 30px rgba(7, 37, 68, 0.24);
+  object-fit: cover;
+}
+
+.contact {
+  background: linear-gradient(135deg, #008583 0%, #00b7b5 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-card {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  background: rgba(8, 39, 77, 0.18);
+  box-shadow: 0 18px 40px rgba(5, 24, 47, 0.16);
+  backdrop-filter: blur(4px);
+}
+
+.contact-intro {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.contact-details {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 1.25rem;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  text-align: left;
+}
+
+.contact-details span {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contact-details a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.facebook-like-button {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0;
+  margin-left: 12px;
+  border-radius: 12px;
+  background: transparent;
+  text-decoration: none;
+  box-shadow: none;
+  transition: transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.facebook-like-button:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.facebook-like-image {
+  display: block;
+  height: 76px;
+  width: auto;
+  border-radius: 10px;
 }
